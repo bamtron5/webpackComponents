@@ -7,13 +7,17 @@ import 'angular-ui-bootstrap';
 // High Level Pages
 import emojiList from './emojiList/emojiList.module';
 
+// Low Level Components
+import emojiModal from './emojiModal/emojiModal.module';
+
 // Config
 import {Config} from './app.config';
 
 const dependencies = [
   'ui.router',
   'ui.bootstrap',
-  emojiList
+  emojiList,
+  emojiModal
 ];
 
 angular.module('app', dependencies)

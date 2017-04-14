@@ -1,6 +1,8 @@
-<uib-accordion>
-  <div uib-accordion-group heading="Hello World">
-    Ahhhhh dope, content
-  </div>
-</uib-accordion>
-<p ng-repeat="(key, emoji) in vm.emojis">{{key}}</p>
+<div class="container">
+  <uib-accordion>
+    <div uib-accordion-group heading="Hello World">
+      Ahhhhh dope, content
+    </div>
+  </uib-accordion>
+  <a ng-repeat="(key, emoji) in vm.emojis" ng-click="vm.openModal(emoji)">{{key}}</a>
+</div>
